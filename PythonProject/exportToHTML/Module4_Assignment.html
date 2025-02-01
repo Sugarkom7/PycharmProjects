@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>Module4_Assignment.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #7a7e85;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Module4_Assignment.py</font>
+</center></td></tr></table>
+<pre>
+<span class="s1">#1. Write a Python function to find the Max of three numbers.</span>
+<span class="s1"># x = [1874, 4567, 3901]</span>
+<span class="s1"># print(max(x))</span>
+
+
+<span class="s1">#2. Write a Python program to reverse a string.</span>
+<span class="s1"># y = &quot;God is good!&quot;</span>
+<span class="s1"># print(y[::-1])</span>
+
+
+<span class="s1">#3. Write a Python function that takes a number as a parameter and check the number is prime or not.</span>
+
+
+<span class="s1"># def prime_number(number):</span>
+<span class="s1">#     if number &lt;= 1:</span>
+<span class="s1">#         return False</span>
+<span class="s1">#     for i in range(2, int(number**0.5) + 1):</span>
+<span class="s1">#         if number % i == 0:</span>
+<span class="s1">#             return False</span>
+<span class="s1">#         return True</span>
+<span class="s1"># number = int(input(&quot;The number is: &quot;))</span>
+<span class="s1"># print(prime_number(number))</span>
+
+
+<span class="s1"># 4. What is the output of the below program ?</span>
+<span class="s1"># x = 50</span>
+<span class="s1"># def func(x):</span>
+<span class="s1">#  print('x is', x)</span>
+<span class="s1">#  x = 2</span>
+<span class="s1">#  print('Changed local x to', x)</span>
+<span class="s1"># func(x)</span>
+<span class="s1"># print('x is now', x)</span>
+<span class="s1">#Answer:</span>
+<span class="s1"># x is 50</span>
+<span class="s1"># change local variable to 2</span>
+<span class="s1"># x is now 50. x being a global variable, it will remain unchanged.</span>
+
+
+<span class="s1">#5. What is the output of the following code?</span>
+<span class="s1"># def foo():</span>
+<span class="s1">#     try:</span>
+<span class="s1">#         return 1</span>
+<span class="s1">#     finally:</span>
+<span class="s1">#         return 2</span>
+<span class="s1"># k = foo()</span>
+<span class="s1"># print(k)</span>
+<span class="s1">#Answer: The output will be 2 because of the finally block</span>
+
+
+<span class="s1"># 6. What is the output of the following code?</span>
+<span class="s1"># class test:</span>
+<span class="s1">#     def __init__(self,a=&quot;Hello World&quot;):</span>
+<span class="s1">#             self.a = a</span>
+<span class="s1">#     def display(self):</span>
+<span class="s1">#         print(self.a)</span>
+<span class="s1"># obj=test() Creating an instance for the class test.</span>
+<span class="s1"># obj.display() Calling the display method.</span>
+<span class="s1">#Answer: The output will be Hello World</span>
+<span class="s1"># Module 4- Functions, OOPs and Exception Handling</span>
+
+
+<span class="s1"># 7. What is the output of the following piece of code?</span>
+<span class="s1"># class Stud:</span>
+<span class="s1">#     def __init__(self, roll_no, grade):</span>
+<span class="s1">#         self.roll_no = roll_no</span>
+<span class="s1">#         self.grade = grade</span>
+<span class="s1">#     def display (self):</span>
+<span class="s1">#         print(&quot;Roll no : &quot;, self.roll_no, &quot;, Grade: &quot;, self.grade)</span>
+<span class="s1"># stud1 = Stud(34, 'S')</span>
+<span class="s1"># stud1.age=7</span>
+<span class="s1"># print(hasattr(stud1, 'age'))</span>
+<span class="s1">#Answer: I don't remember being taught hasattr() function from the class.</span>
+<span class="s1">#SO i have to check google. the above output would be true because</span>
+<span class="s1">#that function checks if an object has aa specific attribute i.e age.</span>
+
+
+
+<span class="s1"># 8. Suppose B is a subclass of A, to invoke the __init__ method in A from B, what is</span>
+<span class="s1"># the line of code you should write?</span>
+<span class="s1"># class A():</span>
+<span class="s1">#     def __init__(self):</span>
+<span class="s1">#         print(&quot;print something&quot;)</span>
+<span class="s1"># class B(A):</span>
+<span class="s1">#     def __init__(self):</span>
+<span class="s1">#         print(&quot;print something here too&quot;)</span>
+<span class="s1">#The above question is confusing to me. Thanks</span>
+
+
+
+<span class="s1"># 9. What is the output of the following code?</span>
+<span class="s2">class </span><span class="s0">Demo</span><span class="s3">:</span>
+    <span class="s2">def </span><span class="s0">__init__</span><span class="s3">(</span><span class="s0">self</span><span class="s3">):</span>
+        <span class="s0">self</span><span class="s3">.</span><span class="s0">a </span><span class="s3">= </span><span class="s4">1</span>
+        <span class="s0">self</span><span class="s3">.</span><span class="s0">__b </span><span class="s3">= </span><span class="s4">1</span>
+    <span class="s2">def </span><span class="s0">display</span><span class="s3">(</span><span class="s0">self</span><span class="s3">):</span>
+        <span class="s2">return </span><span class="s0">self</span><span class="s3">.</span><span class="s0">__b</span>
+<span class="s0">obj </span><span class="s3">= </span><span class="s0">Demo</span><span class="s3">()</span>
+<span class="s0">print</span><span class="s3">(</span><span class="s0">obj</span><span class="s3">.</span><span class="s0">a</span><span class="s3">)</span>
+<span class="s1">#Answer: This code will output 1 which belongs to a.</span>
+<span class="s1">#Normally there suppose to be a return of the value of b but it's impossible</span>
+<span class="s1">#because __b it's private.</span>
+
+<span class="s1"># 10. What is the output of the code shown below?</span>
+<span class="s1"># lst = [1, 2, 3]</span>
+<span class="s1"># lst[3]</span>
+<span class="s1"># a) NameError</span>
+<span class="s1"># b) ValueError</span>
+<span class="s1"># c) IndexError</span>
+<span class="s1"># d) TypeError</span>
+<span class="s1">#Answer: c)</span>
+</pre>
+</body>
+</html>
